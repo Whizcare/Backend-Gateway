@@ -1,0 +1,393 @@
+{
+    "Routes": [
+
+        //Patient service
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAllPatients",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Patient/GetAllPatients",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAllPatientsById",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Patient/GetAllPatientsById",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/Register_Patient",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/Patient/Register_Patient",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/SignIn_Patient",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Patient/SignIn_Patient",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/Delete_Patient",
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "DownstreamPathTemplate": "/api/Patient/Delete_Patient",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/Update_Patient",
+            "UpstreamHttpMethod": [ "PUT" ],
+            "DownstreamPathTemplate": "/api/Patient/Update_Patient",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetPatientsByEmail",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Patient/GetPatientsByEmail",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+
+
+        //Prescriptions service
+
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/Get_Prescription",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Prescriptions/Get_Prescription",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/Prescription_Add",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/Prescriptions/Prescription_Add",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+
+
+        //Health History
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetHistory",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/HealthHistory/GetHistory",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/HealthHistory_Add",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/HealthHistory/HealthHistory_Add",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7098
+                }
+            ]
+        },
+
+        // Doctor Database
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAllDoctors",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Doctor/GetAllDoctors",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7068
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetDoctorsByEmail",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Doctor/GetDoctorsByEmail",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7068
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetDoctorsByAvailability",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Doctor/GetDoctorsByAvailability",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7068
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/AddDoctor",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/Doctor/AddDoctor",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7068
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/AddAvailability",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/PhysicianAvailabilityStatus/AddAvailability",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7068
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/UpdateAvailability",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/PhysicianAvailabilityStatus/UpdateAvailability",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7068
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAvailabilityStatus",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/PhysicianAvailabilityStatus/GetStatus",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7068
+                }
+            ]
+        },
+
+        // Appointment Database
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAppById",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Appointment/getappointmentsbypatientid",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAppByDoctorandStatus",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Appointment/getappointmentsbyDoctoridAndStatus",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAppointmentsAfterCheckup",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Appointment/GetAppointmentsAfterCheckup",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/GetAppByDate",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Appointment/getappointmentsbyDate",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/Email_Notification",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Appointment/Email_Notification",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/BookAppointment",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/Appointment/BookAppointment",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/Update/{AppoinmentId}/{status1}",
+            "UpstreamHttpMethod": [ "PUT" ],
+            "DownstreamPathTemplate": "/api/Appointment/Update/{AppoinmentId}/{status1}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+
+        // Patient Initial Checkup Table
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/PatientCheckUp/AddCheckUpDetails",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/PatientCheckUp/AddCheckUpDetails",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/Whizcare/PatientCheckUp/GetCheckUpDetailsByAppointmentId",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/PatientCheckUp/GetCheckUpDetailsByAppointmentId",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7078
+                }
+            ]
+        },
+
+        //Allergy Database
+
+        {
+            "UpstreamPathTemplate": "/Whizcare/Allergy/GetAllAllergy",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/Allergy/GetAllAllergy",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7225
+                }
+            ]
+        },
+      {
+        "UpstreamPathTemplate": "/Whizcare/Allergy/AddAllergies",
+        "UpstreamHttpMethod": [ "POST" ],
+        "DownstreamPathTemplate": "/api/Allergy/AddAllergies",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 7225
+          }
+        ]
+      },
+      {
+        "UpstreamPathTemplate": "/Whizcare/Audit/AddAudit",
+        "UpstreamHttpMethod": [ "POST" ],
+        "DownstreamPathTemplate": "/api/Audit/AddAudit",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 7157
+          }
+        ]
+      }
+    ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7163"
+  }
+}
